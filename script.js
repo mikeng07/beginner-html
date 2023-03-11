@@ -24,6 +24,7 @@ for (let i =0 ; i<3;i++)
 }
 
 
+
 //conditions - statements
 if(age <30)
 {
@@ -42,3 +43,41 @@ function Coffee_Maker (milk,coffee)
 }
 console.log(Coffee_Maker(2,5))
 
+//OOP - object oriented programming
+
+class School
+{
+   constructor(student,professor)
+   {
+    this.student=student
+    this.professor=professor
+   } 
+
+   number_of_student()
+   {
+    return this.student;
+   }
+
+   number_of_professor()
+   {
+    return this.professor;
+   }
+
+}
+
+let Elcamino = new School(100,10);
+
+console.log(Elcamino.number_of_student())
+console.log(Elcamino.number_of_professor())
+
+//Inheritance
+class Class extends School
+{
+    constructor(student,professor,table)
+    {
+        super(student)
+        super(professor)
+        this.table = table
+    }
+
+}
